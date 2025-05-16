@@ -1,0 +1,100 @@
+/* Căn giữa toàn bộ nội dung theo chiều ngang và dọc */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Tiêu đề */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    
+    /* RESET hoàn toàn để tránh lỗi cách chữ */
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: 1.2;
+    text-transform: none;
+    font-variant: normal;
+    font-style: normal;
+    font-family: Arial, sans-serif; /* ép lại font rõ ràng */
+}
+
+
+/* Form chính */
+form {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Nhãn */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+/* Các input dạng text, password, textarea, combobox */
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+/* TextArea có thể resize theo chiều dọc */
+textarea {
+    resize: vertical;
+}
+
+/* Checkbox & radio có khoảng cách hợp lý */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 6px;
+}
+
+/* Hộp chọn nhiều */
+select[multiple] {
+    height: auto;
+}
+
+/* Các nút bấm */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 10px;  /* giảm padding */
+    margin: 6px 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px; /* giảm font-size */
+}
+
+/* Hiệu ứng hover cho nút */
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
